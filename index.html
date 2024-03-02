@@ -4,7 +4,20 @@
     <title>site Ifood</title>
 </head>
 <body onload="window.alert('Seja bem vindo!')">
+    <input type="text" id="valor">
+    <button id="enviar">Enviar</button>
 
+    <script>
+        document.querySelector("#enviar")
+        .addEventListener("click", mudarValor)
+
+        function mudarValor(){
+            document.querySelector("#valor")
+            .value = "Novo conteúdo"
+        }
+
+
+    </script>
     
 </body>
 </html>
