@@ -25,7 +25,7 @@ function abrirSubMenu(){
 
 }
 
-for (let item in itens){
+for (let item of itens){
     if (item.querySelector(".submenu")){
         item.addEventListener("click", abrirDubMenu);
     }
